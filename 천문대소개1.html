@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>웹 페이지 예시</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('배경사진.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    a {
+        color: white;
+        text-decoration-line: none;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* 3개의 행을 설정: 상단, 콘텐츠, 하단 */
+      min-height: 100vh; /* 화면 전체 높이로 설정 */
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      border: 2px solid #fff;
+      padding: 10px;
+      font-size: 20px;
+      display: inline-block;
+    }
+    .item2 {
+      /*border: 1px solid #fff;*/
+      padding: 10px;
+      background-color: #2e2a2a;
+      opacity: 0.8;
+      border: 1px solid #7a7a7a;
+      cursor: pointer;
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div class="container">
+    <div class="header">
+      <h1><a href="메인페이지6.html">안양어린이천문대</a></h1>
+    </div>
+    <img src="망원경소개.png" width="100%">
+    <div class="footer">
+      <div class="item2" onclick="location.href='천문대소개1.html'">
+        <h2>망원경<br>소개</h2>
+      </div>
+      <div class="item2" onclick="location.href='천문대소개2.html'">
+        <h2>교실<br>소개</h2>
+      </div>
+      <div class="item2" onclick="location.href='천문대소개3.html'">
+        <h2>로비<br>공간</h2>
+      </div>
+      <div class="item2" onclick="location.href='천문대소개4.html'">
+        <h2>오시는<br>길</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

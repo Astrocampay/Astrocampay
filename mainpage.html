@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>웹 페이지 예시</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('배경사진.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    a {
+        color: white;
+        text-decoration-line: none;
+        display: inline-block;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* 3개의 행을 설정: 상단, 콘텐츠, 하단 */
+      min-height: 100vh; /* 화면 전체 높이로 설정 */
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      border: 2px solid #fff;
+      padding: 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .item2 {
+      /*border: 1px solid #fff;*/
+      padding: 10px;
+    }
+
+    /*이미지 슬라이더*/
+    .slider-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+    }
+
+    .prev-btn, .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+    .prev-btn:hover, .next-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div class="container">
+    <div class="header">
+      <h1><a href="메인페이지6.html">안양어린이천문대</a></h1>
+    </div>
+    <div class="content">
+      <div class="menu item">
+        <h2><a href="https://forms.gle/HGW2d4bY5MTozzht7">명단<br>등록하기</a></h2>
+      </div>
+      <div class="menu item">
+        <h2><a href="필독안내1.html">필독<br>안내사항</a></h2>
+      </div>
+      <div class="menu item">
+        <h2><a href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29785723&search.menuid=42&search.boardtype=I">추천<br>도서</a></h2>
+      </div>
+      <div class="menu item">
+        <h2><a href="천문대소개1.html">천문대<br>소개</a></h2>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="item2">
+        <h2><a href="tel:010-4964-3245"><img src="전화아이콘.png"><br>전화문의</a></h2>
+      </div>
+      <div class="item2">
+        <h2><a href="http://qr.kakao.com/talk/bHMckonDXRfefgUCLwbSLMEDZKs-"><img src="카톡아이콘.png"><br>카카오톡</a></h2>
+      </div>
+      <div class="item2">
+        <h2><a href=""><img src="카페아이콘.png"><br>네이버카페</a></h2>
+      </div>
+      <div class="item2">
+        <h2><a href="https://www.instagram.com/astrocampay"><img src="인스타아이콘.png"><br>인스타그램</a></h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
